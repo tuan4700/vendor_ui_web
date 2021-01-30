@@ -1,2 +1,2 @@
 # vendor_ui_web
-web first
+web first. First web vendor
