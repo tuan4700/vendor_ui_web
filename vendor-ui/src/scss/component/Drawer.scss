@@ -35,7 +35,7 @@
   }
 
   &_brand {
-    background-color: $lightCarminePink;
+    background-color: rgb(164, 238, 238);
     color: $black;
     height: rem(70);
     display: flex;
@@ -123,12 +123,12 @@
 
       &:hover {
         background-color: rgba($color: $platinum, $alpha: 0.1);
-        color: $lightCarminePink;
+        color: rgb(164, 238, 238);
       }
 
       &.active {
-        background-color: rgba($color: $lightCarminePink, $alpha: 0.3);
-        color: $lightCarminePink;
+        background-color: rgba($color: rgb(164, 238, 238), $alpha: 0.3);
+        color: rgb(164, 238, 238);
       }
     }
   }
