@@ -1,0 +1,41 @@
+.recommendVendor {
+  flex-grow: 1;
+
+  &_drawer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: $normal-transition;
+
+    &.open {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &_contentContainer {
+    padding: rem(16);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: rem(10);
+    column-gap: rem(10);
+    max-height: calc(100% - 108px);
+    overflow: auto;
+    @include max-desktop-down {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include tablet-down {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile-down {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &.drawer-open {
+      margin-right: calc(50vw + 20px);
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.editHistory {
+  flex-grow: 1;
+  background-color: $white;
+  position: relative;
+
+  &_contactTable {
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: rem(30);
+
+    &-table {
+      width: 100%;
+
+      th,
+      td {
+        min-width: rem(100);
+      }
+    }
+
+    &-headLine {
+      background-color: $ruddyPink05;
+    }
+
+    &-headItem {
+      white-space: nowrap;
+      padding: rem(10);
+    }
+    &-body {
+      min-height: rem(50);
+    }
+    &-row {
+      &:hover {
+        background-color: $ruddyPink015;
+      }
+
+      &.selected {
+        background-color: $ruddyPink03;
+      }
+    }
+    &-radio {
+      text-align: center;
+    }
+    &-data {
+      padding-top: rem(10);
+      padding-bottom: rem(10);
+    }
+  }
+
+  &_exportPdf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    &.show {
+      display: block;
+    }
+
+    &-modal {
+      position: relative;
+      margin: auto;
+      padding: rem(32);
+      background-color: white;
+      height: calc(100% - 64px);
+    }
+    &-close {
+      position: absolute;
+      right: rem(10);
+      top: rem(10);
+      cursor: pointer;
+    }
+    &-pdfViewer,
+    iframe {
+      width: 100%;
+      height: 100%;
+      @include scrollbar();
+    }
+  }
+}

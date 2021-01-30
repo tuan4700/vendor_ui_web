@@ -1,0 +1,51 @@
+.vendorReview {
+  flex-grow: 1;
+  background-color: $white;
+  position: relative;
+
+  &_contactTable {
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: rem(30);
+
+    &-table {
+      width: 100%;
+
+      th,
+      td {
+        min-width: rem(100);
+      }
+    }
+
+    &-headLine {
+      background-color: $ruddyPink05;
+    }
+
+    &-headItem {
+      white-space: nowrap;
+      padding: rem(10);
+    }
+    &-body {
+      min-height: rem(50);
+    }
+    &-row {
+      &:hover {
+        background-color: $ruddyPink015;
+      }
+
+      &.selected {
+        background-color: $ruddyPink03;
+      }
+    }
+    &-radio {
+      text-align: center;
+    }
+    &-data {
+      padding-top: rem(10);
+      padding-bottom: rem(10);
+    }
+  }
+}

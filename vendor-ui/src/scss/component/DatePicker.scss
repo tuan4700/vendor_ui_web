@@ -1,0 +1,47 @@
+.datepicker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile-down {
+    display: block;
+  }
+
+  &_label {
+    @include fontBase(24);
+    flex-shrink: 1;
+
+    @include desktop-down {
+      @include fontBase(20);
+    }
+
+    @include mobile-down {
+      @include fontBase(16);
+    }
+
+    &.required {
+      &::after {
+        content: "*";
+        color: $red;
+      }
+    }
+  }
+
+  &_datepickerContainer {
+    max-width: rem(250);
+    flex-shrink: 0;
+    width: 100%;
+
+    .react-date-picker {
+      width: 100%;
+    }
+
+    .react-date-picker__wrapper {
+      width: calc(100% - 10px);
+      border: rem(1) solid $battleshipGrey;
+      outline: none;
+      font-size: rem(24);
+      padding: rem(5);
+    }
+  }
+}

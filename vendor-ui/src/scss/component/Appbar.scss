@@ -1,0 +1,44 @@
+.appbar {
+  height: rem(70);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: $white;
+  padding-right: rem(20);
+  padding-left: rem(20);
+
+  @include max-desktop-down {
+    justify-content: space-between;
+  }
+
+  &_menu {
+    display: none;
+    cursor: pointer;
+
+    @include max-desktop-down {
+      display: block;
+    }
+  }
+
+  &_account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &-avatar {
+      margin-left: rem(40);
+      width: rem(40);
+      height: rem(40);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $ruddyPink;
+    }
+
+    &-icon {
+      margin-left: rem(20);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.titleBar {
+  &_container {
+    background-color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(10) rem(20);
+
+    @include mobile-down {
+      display: block;
+    }
+  }
+
+  &_title {
+    @include fontBase(32);
+    font-weight: bold;
+  }
+  &_actions {
+    display: flex;
+    align-items: center;
+
+    &-btn {
+      border: rem(1) solid $platinum;
+      &:not(:first-child) {
+        margin-left: rem(10);
+      }
+    }
+
+    &-export {
+      .button {
+        display: flex;
+        align-items: center;
+      }
+
+      .icon-export {
+        margin-right: rem(10);
+      }
+    }
+
+    &-search-input {
+      max-width: 100%;
+      visibility: hidden;
+      transition: $normal-transition;
+      overflow: hidden;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      background-color: $white;
+      max-height: 0;
+
+      &.show {
+        opacity: 1;
+        visibility: visible;
+        max-height: rem(50);
+        transition: $normal-transition;
+
+        .input {
+          width: 100%;
+          justify-content: center;
+          transition: $normal-transition;
+        }
+
+        .input_inputContainer {
+          max-width: 80%;
+          width: 100%;
+          transition: $normal-transition;
+        }
+      }
+    }
+  }
+}

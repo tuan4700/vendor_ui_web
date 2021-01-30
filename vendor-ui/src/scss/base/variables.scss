@@ -1,0 +1,33 @@
+$bleuDeFrance: #3498db;
+$lightCarminePink: #f26071;
+$onyx: #333945;
+$snow: #fbfbfb;
+$platinum: #e4e4e4;
+$darkGray: #a8a8a8;
+$battleshipGrey: #848484;
+$ruddyPink: #eb8d8d;
+$ruddyPink05: rgba(
+  $color: $ruddyPink,
+  $alpha: 0.5,
+);
+$ruddyPink03: rgba(
+  $color: $ruddyPink,
+  $alpha: 0.3,
+);
+$ruddyPink015: rgba(
+  $color: $ruddyPink,
+  $alpha: 0.15,
+);
+
+$white: white;
+$black: black;
+$red: red;
+
+$fast-transition: all 0.15s linear;
+$normal-transition: all 0.25s linear;
+
+$normal-boxshadow: 0 0 12px
+  rgba(
+    $color: $black,
+    $alpha: 0.15,
+  );

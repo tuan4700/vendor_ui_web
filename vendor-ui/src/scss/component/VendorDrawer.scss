@@ -1,0 +1,52 @@
+.vendorDrawer {
+  width: 50vw;
+  background-color: $white;
+  height: 100vh;
+  overflow: auto;
+
+  @include mobile-down {
+    width: 100vw;
+  }
+
+  &_actionBar {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: rem(1) solid $platinum;
+    padding: rem(8);
+    margin-bottom: rem(20);
+
+    &-actionBtn {
+      width: rem(100);
+      .button {
+        width: 100%;
+      }
+
+      &:not(:first-child) {
+        margin-left: rem(10);
+      }
+    }
+  }
+
+  &_section {
+    @include fontBase(20);
+    font-weight: bold;
+    margin-top: rem(10);
+    margin-left: rem(10);
+    border-bottom: rem(1) solid $platinum;
+  }
+
+  &_informationTable {
+    margin: rem(30) rem(10);
+    &-line {
+      display: flex;
+    }
+
+    &-title,
+    &-value {
+      flex-grow: 1;
+      flex-basis: 40%;
+      border: rem(1) solid $platinum;
+      padding: rem(10);
+    }
+  }
+}

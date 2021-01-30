@@ -1,0 +1,135 @@
+.drawer {
+  width: rem(300);
+  height: 100%;
+  transition: all $normal-transition linear;
+  position: relative;
+
+  @include max-desktop-down {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+
+    &.show {
+      width: rem(250);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @include mobile-down {
+    &.show {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+    }
+  }
+
+  &_menu {
+    display: none;
+    @include mobile-down {
+      display: block;
+      position: absolute;
+      top: rem(25);
+      right: rem(25);
+    }
+  }
+
+  &_brand {
+    background-color: $lightCarminePink;
+    color: $black;
+    height: rem(70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include fontBase(48);
+    font-weight: bold;
+  }
+  &_accordion {
+    $accordion: &;
+    background-color: $onyx;
+    height: calc(100% - 70px);
+    overflow: auto;
+
+    &-item {
+      &.active {
+        #{$accordion}-title {
+          &::after {
+            transform: translateY(rem(-5)) rotate(45deg);
+          }
+        }
+
+        #{$accordion}-childWrapper {
+          opacity: 1;
+          visibility: visible;
+          max-height: rem(250);
+          border-left: rem(1) solid $lightCarminePink;
+        }
+      }
+    }
+
+    &-title {
+      @include fontBase(30, $snow);
+      cursor: pointer;
+      transition: $normal-transition;
+      position: relative;
+      padding: rem(10);
+      display: flex;
+      align-items: center;
+
+      div {
+        margin-right: rem(10);
+      }
+
+      @include max-desktop-down {
+        @include fontBase(28, $snow);
+      }
+
+      @include desktop-down {
+        @include fontBase(24, $snow);
+      }
+
+      &::after {
+        position: absolute;
+        right: rem(20);
+        top: 50%;
+        content: "";
+        width: rem(10);
+        height: rem(10);
+        border-right: rem(2) solid $white;
+        border-bottom: rem(2) solid $white;
+        transform: translateY(-50%) rotate(-45deg);
+        transition: $fast-transition;
+      }
+    }
+    &-childWrapper {
+      max-height: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: $normal-transition;
+      overflow: hidden;
+      border: rem(1) solid transparent;
+    }
+
+    &-navigate {
+      font-size: rem(24);
+      display: flex;
+      align-items: center;
+      color: $darkGray;
+      padding: rem(10) 0 rem(10) rem(10);
+
+      div {
+        margin-right: rem(10);
+      }
+
+      &:hover {
+        background-color: rgba($color: $platinum, $alpha: 0.1);
+        color: $lightCarminePink;
+      }
+
+      &.active {
+        background-color: rgba($color: $lightCarminePink, $alpha: 0.3);
+        color: $lightCarminePink;
+      }
+    }
+  }
+}

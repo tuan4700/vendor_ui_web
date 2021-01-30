@@ -1,0 +1,38 @@
+.select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile-down {
+    display: block;
+  }
+
+  &_label {
+    @include fontBase(24);
+    flex-shrink: 1;
+
+    @include desktop-down {
+      @include fontBase(20);
+    }
+
+    @include mobile-down {
+      @include fontBase(16);
+    }
+
+    &.required {
+      &::after {
+        content: "*";
+        color: $red;
+      }
+    }
+  }
+
+  &_selectContainer {
+    max-width: rem(250);
+    flex-shrink: 0;
+    flex-basis: 100%;
+  }
+  &_select {
+    width: 100%;
+  }
+}

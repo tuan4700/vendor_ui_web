@@ -1,0 +1,50 @@
+.button {
+  cursor: pointer;
+  padding: rem(10) rem(20);
+  @include fontBase(16, $white);
+  transition: $fast-transition;
+  border: none;
+  -webkit-appearance: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  display: inline-block;
+
+  &-primary {
+    background-color: $lightCarminePink;
+    color: $white;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &-default {
+    background-color: $white;
+    color: $black;
+
+    &:hover {
+      color: $lightCarminePink;
+    }
+  }
+
+  &-outlined {
+    @extend .button-default;
+    border: rem(1) solid $platinum;
+    &.primary {
+      border: rem(1) solid $lightCarminePink;
+      color: $lightCarminePink;
+
+      &:hover {
+        color: $white;
+        background-color: $lightCarminePink;
+      }
+    }
+  }
+
+  &-small {
+    padding: rem(8);
+  }
+}

@@ -1,0 +1,71 @@
+.icon {
+  &-bell {
+    @include loadIcon("../../assets/icons/bell.png");
+  }
+  &-loupe {
+    @include loadIcon("../../assets/icons/loupe.png");
+  }
+  &-menu {
+    @include loadIcon("../../assets/icons/menu.png");
+  }
+  &-more {
+    @include loadIcon("../../assets/icons/more.png");
+  }
+  &-plus {
+    @include loadIcon("../../assets/icons/plus.png");
+  }
+  &-whiteCross {
+    @include loadIcon("../../assets/icons/white-cross.png");
+  }
+  &-export {
+    @include loadIcon("../../assets/icons/export.png");
+  }
+  &-eye {
+    @include loadIcon("../../assets/icons/eye.png");
+  }
+  &-chart {
+    @include loadIcon("../../assets/icons/chart.png");
+  }
+  &-vendor {
+    @include loadIcon("../../assets/icons/vendor.png");
+  }
+  &-vendorAdd {
+    @include loadIcon("../../assets/icons/vendor-add.png");
+  }
+  &-vendorRating {
+    @include loadIcon("../../assets/icons/vendor-rating.png");
+  }
+  &-vendorReview {
+    @include loadIcon("../../assets/icons/vendor-review.png");
+  }
+  &-vendorRecommend {
+    @include loadIcon("../../assets/icons/vendor-recommend.png");
+  }
+  &-myVendor {
+    @include loadIcon("../../assets/icons/my-vendor.png");
+  }
+  &-vendorReport {
+    @include loadIcon("../../assets/icons/vendor-report.png");
+  }
+  &-contract {
+    @include loadIcon("../../assets/icons/contract.png");
+  }
+  &-myContract {
+    @include loadIcon("../../assets/icons/my-contract.png");
+  }
+  &-contractAdd {
+    @include loadIcon("../../assets/icons/contract-add.png");
+  }
+  &-editHistory {
+    @include loadIcon("../../assets/icons/edit-history.png");
+  }
+  &-vendorRating {
+    @include loadIcon("../../assets/icons/vendor-rating.png");
+  }
+  &-rateVendor {
+    @include loadIcon("../../assets/icons/rate-vendor.png");
+  }
+  &-vendorReview {
+    @include loadIcon("../../assets/icons/vendor-review.png");
+  }
+}

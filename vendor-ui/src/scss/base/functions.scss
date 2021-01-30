@@ -1,0 +1,53 @@
+@function rem($size: 16) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+@mixin fontBase($fontsize: 28, $color: $black) {
+  font-size: rem($fontsize);
+  line-height: rem($fontsize * 1.5);
+  color: $color;
+}
+
+@mixin loadIcon($url, $width: 24, $height: 24) {
+  span {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    display: block;
+  }
+
+  height: rem($height);
+  width: rem($width);
+}
+
+@mixin scrollbar(
+  $color: $lightCarminePink,
+  $background-color: $snow,
+  $width: 8,
+  $height: 8
+) {
+  // For Chrome & Safari:
+  ::-webkit-scrollbar {
+    width: rem($width);
+    height: rem($height);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $color;
+    border-radius: rem(20);
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  }
+
+  // For Firefox:
+  @-moz-document url-prefix() {
+    .scroller {
+      scrollbar-width: thin;
+      scrollbar-color: #1e202a;
+    }
+  }
+}
