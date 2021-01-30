@@ -38,6 +38,7 @@ export const fakeVendor = [
 
 export const fakeContract = [
   {
+    fakeContract:"hello",
     contractNumber: "3",
     contractMemberCorrect: "what",
     product: "hummm",
@@ -47,8 +48,10 @@ export const fakeContract = [
     type: "ohh",
     editDate: "29/01/2020",
     editContent: "contract",
+    history: "15",
   },
   {
+    contractTitle: "Heello",
     contractNumber: "4",
     contractMemberCorrect: "wwhuttt",
     product: "haaaaa",
@@ -58,6 +61,7 @@ export const fakeContract = [
     type: "ohh",
     editDate: "28/02/2020",
     editContent: "contractMemberCorrect",
+    
   },
 ];
 

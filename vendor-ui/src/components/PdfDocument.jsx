@@ -56,6 +56,7 @@ const PdfContent = ({ data, title }) => {
     <View>
       <View style={styles.title}>
         <Text>{title || ""}</Text>
+        {/* <Text>{"cong hoa xa hoi chu ngia viet nam"}</Text> */}
       </View>
       {data &&
         Object.keys(data).map((ele, index) => {
@@ -84,6 +85,7 @@ const PdfDocument = ({ vendor, arrayContract }) => {
                 <PdfContent
                   data={ele}
                   title={vendor ? "Vendor Information" : "Contract Information"}
+                  text={"cong hoa xa hoi cnvn"}
                 />
               </View>
             ))}
