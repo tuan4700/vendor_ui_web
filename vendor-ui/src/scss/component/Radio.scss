@@ -5,7 +5,7 @@
   &_label {
     @include fontBase(14);
     flex-shrink: 1;
-    order: 2;
+    order: 2; 
 
     @include desktop-down {
       @include fontBase(20);
@@ -35,8 +35,9 @@
   //     padding: rem(5);
   //   }
 
-  //   &_radioContainer {
-  //     max-width: rem(250);
-  //     flex-shrink: 0;
-  //   }
+    &_radioContainer {
+      max-width: rem(250);
+      flex-shrink: 0;
+      margin-left: rem(-50);
+    }
 }

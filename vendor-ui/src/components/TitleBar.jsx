@@ -29,18 +29,17 @@ const TitleBar = (props) => {
                 <Icon name="loupe" />
               </Button>
             </div>
-            <div className="titleBar_actions-btn titleBar_actions-add">
-              <Link to={props.addLink || ""}>
-                <Button size="small" variant="primary">
-                  <Icon name="whiteCross" />
-                </Button>
-              </Link>
+
+            <div className="titleBar_actions-btn titleBar_actions-delete">
+              <Button size="small">
+                <Icon name="bell" />
+              </Button>
             </div>
 
             <div className="titleBar_actions-btn titleBar_actions-add">
               <Link to={props.addLink || ""}>
                 <Button size="small" variant="primary">
-                  <Icon name="menu" />
+                  <Icon name="whiteCross" />
                 </Button>
               </Link>
             </div>

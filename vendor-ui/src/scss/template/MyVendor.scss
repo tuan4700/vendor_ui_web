@@ -33,6 +33,7 @@
     &-headItem {
       white-space: nowrap;
       padding: rem(10);
+      padding-left: rem(35);
 
       &:first-child {
         display: flex;
@@ -45,8 +46,9 @@
           background-size: contain;
           height: 100%;
           display: block;
+          margin-left: rem(20);
           width: rem(16);
-          height: rem(20);
+          height: rem(15);
           margin-left: rem(10);
         }
       }
