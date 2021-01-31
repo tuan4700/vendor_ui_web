@@ -32,7 +32,7 @@ const TitleBar = (props) => {
 
             <div className="titleBar_actions-btn titleBar_actions-delete">
               <Button size="small">
-                <Icon name="bell" />
+                <Icon name="delete" />
               </Button>
             </div>
 
