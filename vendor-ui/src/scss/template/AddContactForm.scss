@@ -51,7 +51,7 @@
     }
 
     &-section {
-      @include fontBase(18);
+      @include fontBase(16);
       font-weight: bold;
 
       @include desktop-down {

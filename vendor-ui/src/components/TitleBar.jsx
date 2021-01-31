@@ -36,6 +36,15 @@ const TitleBar = (props) => {
                 </Button>
               </Link>
             </div>
+
+            <div className="titleBar_actions-btn titleBar_actions-add">
+              <Link to={props.addLink || ""}>
+                <Button size="small" variant="primary">
+                  <Icon name="menu" />
+                </Button>
+              </Link>
+            </div>
+
             <div className="titleBar_actions-btn titleBar_actions-menu">
               <Button size="small">
                 <Icon name="menu" />
