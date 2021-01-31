@@ -30,11 +30,11 @@ const TitleBar = (props) => {
               </Button>
             </div>
 
-            <div className="titleBar_actions-btn titleBar_actions-delete">
+            {/* <div className="titleBar_actions-btn titleBar_actions-delete">
               <Button size="small">
                 <Icon name="delete" />
               </Button>
-            </div>
+            </div> */}
 
             <div className="titleBar_actions-btn titleBar_actions-add">
               <Link to={props.addLink || ""}>

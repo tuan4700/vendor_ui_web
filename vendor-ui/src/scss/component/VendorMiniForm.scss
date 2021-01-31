@@ -35,5 +35,13 @@
     &-email {
       color: $lightCarminePink;
     }
+    &-name{
+      align-items: center;
+      margin-left: rem(-30);
+    }
+    &-total{
+      align-items: center;
+      margin-right: rem(-25);
+    }
   }
 }

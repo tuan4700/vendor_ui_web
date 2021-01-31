@@ -33,12 +33,12 @@
     outline: none;
     font-size: rem(15);
     padding: rem(12);
-    // margin-left: rem(-100);
   }
 
   &_inputContainer {
     max-width: rem(250);
     flex-shrink: 0;
     transition: $normal-transition;
+    margin-left: rem(-100);
   }
 }
