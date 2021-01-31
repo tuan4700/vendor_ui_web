@@ -85,7 +85,6 @@ const PdfDocument = ({ vendor, arrayContract }) => {
                 <PdfContent
                   data={ele}
                   title={vendor ? "Vendor Information" : "Contract Information"}
-                  text={"cong hoa xa hoi cnvn"}
                 />
               </View>
             ))}

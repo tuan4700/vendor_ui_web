@@ -38,7 +38,6 @@ export const fakeVendor = [
 
 export const fakeContract = [
   {
-    fakeContract:"hello",
     contractNumber: "3",
     contractMemberCorrect: "what",
     product: "hummm",
