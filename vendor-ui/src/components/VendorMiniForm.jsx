@@ -18,9 +18,9 @@ const VendorMiniForm = ({ vendor, onClick, handleAdd }) => {
             >
               <Icon name="plus" />
             </div>
-            <div className="vendorMiniForm_mainContent-action_more">
+            {/* <div className="vendorMiniForm_mainContent-action_more">
               <Icon name="more" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

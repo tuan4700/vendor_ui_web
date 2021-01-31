@@ -56,7 +56,11 @@ const PdfContent = ({ data, title }) => {
     <View>
       <View style={styles.title}>
         <Text>{title || ""}</Text>
-        {/* <Text>{"cong hoa xa hoi chu ngia viet nam"}</Text> */}
+        <Text>{"Cong Hoa Xa Hoi Chu Nghia Viet Nam"}</Text>
+        <Text>{"Doc lap-Tu do-Hanh phuc"}</Text>
+        <Text>{"----------------"}</Text>
+        <Text>{"HOP DONG CUNG CAP"}</Text>
+        <Text>{"\n"}</Text>
       </View>
       {data &&
         Object.keys(data).map((ele, index) => {
@@ -68,6 +72,11 @@ const PdfContent = ({ data, title }) => {
             </View>
           );
         })}
+      <View style={styles.title}>
+        <Text>{"\n"}</Text>
+        <Text>{"Ben Mua             Ben Ban"}</Text>
+        <Text>{"(ky ten)            (ky ten)"}</Text>
+      </View>
     </View>
   );
 };
