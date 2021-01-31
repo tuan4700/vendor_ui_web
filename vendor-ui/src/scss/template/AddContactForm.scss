@@ -6,7 +6,7 @@
   overflow: auto;
 
   &_title {
-    @include fontBase(32);
+    @include fontBase(20);
     padding: rem(20) 0 rem(20) rem(24);
     border-bottom: rem(1) solid $battleshipGrey;
     font-weight: bold;
@@ -51,7 +51,7 @@
     }
 
     &-section {
-      @include fontBase(32);
+      @include fontBase(18);
       font-weight: bold;
 
       @include desktop-down {
@@ -62,14 +62,14 @@
 
     &-radio {
       &_title {
-        @include fontBase(24);
+        @include fontBase(16);
 
         @include desktop-down {
-          @include fontBase(20);
+          @include fontBase(14);
         }
 
         @include mobile-down {
-          @include fontBase(16);
+          @include fontBase(12);
         }
       }
 

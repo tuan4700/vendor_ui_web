@@ -6,7 +6,7 @@
   overflow: auto;
 
   &_title {
-    @include fontBase(32);
+    @include fontBase(20);
     padding: rem(20) 0 rem(20) rem(24);
     border-bottom: rem(1) solid $battleshipGrey;
     font-weight: bold;
@@ -38,7 +38,7 @@
       }
 
       &_title {
-        @include fontBase(24);
+        @include fontBase(12);
 
         @include desktop-down {
           @include fontBase(20);

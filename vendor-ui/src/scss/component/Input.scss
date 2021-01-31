@@ -8,15 +8,15 @@
   }
 
   &_label {
-    @include fontBase(24);
+    @include fontBase(16);
     flex-shrink: 1;
 
     @include desktop-down {
-      @include fontBase(20);
+      @include fontBase(10);
     }
 
     @include mobile-down {
-      @include fontBase(16);
+      @include fontBase(9);
     }
 
     &.required {
@@ -31,8 +31,8 @@
     width: calc(100% - 10px);
     border: rem(1) solid $battleshipGrey;
     outline: none;
-    font-size: rem(24);
-    padding: rem(5);
+    font-size: rem(14);
+    padding: rem(8);
   }
 
   &_inputContainer {

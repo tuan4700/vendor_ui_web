@@ -8,7 +8,7 @@
   }
 
   &_label {
-    @include fontBase(24);
+    @include fontBase(16);
     flex-shrink: 1;
 
     @include desktop-down {

@@ -13,7 +13,7 @@
   }
 
   &_title {
-    @include fontBase(32);
+    @include fontBase(20);
     font-weight: bold;
   }
   &_actions {

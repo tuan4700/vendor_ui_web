@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include fontBase(48);
+    @include fontBase(26);
     font-weight: bold;
   }
   &_accordion {
@@ -68,7 +68,7 @@
     }
 
     &-title {
-      @include fontBase(30, $snow);
+      @include fontBase(20, $snow);
       cursor: pointer;
       transition: $normal-transition;
       position: relative;
@@ -81,11 +81,11 @@
       }
 
       @include max-desktop-down {
-        @include fontBase(28, $snow);
+        @include fontBase(18, $snow);
       }
 
       @include desktop-down {
-        @include fontBase(24, $snow);
+        @include fontBase(16, $snow);
       }
 
       &::after {
@@ -111,7 +111,7 @@
     }
 
     &-navigate {
-      font-size: rem(16);
+      font-size: rem(12);
       display: flex;
       align-items: center;
       color: $darkGray;

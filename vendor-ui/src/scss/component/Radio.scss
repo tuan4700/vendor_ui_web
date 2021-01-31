@@ -3,7 +3,7 @@
   align-items: center;
 
   &_label {
-    @include fontBase(24);
+    @include fontBase(14);
     flex-shrink: 1;
     order: 2;
 
